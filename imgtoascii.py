@@ -15,7 +15,7 @@ i = input("Enter picture's file name: ")
 try:
     img = Image.open(i)
 except:
-    print("wrong file name")
+    print("Wrong file name")
 pix = img.load()
 newpix = [['0' for _ in range(img.size[0])] for _ in range(img.size[1])]
 num = len(asc)
